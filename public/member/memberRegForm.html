@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>등록화면</title>
+	<link href="../css/memberRegForm.css" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container p-0" style="width: 1920px; max-width: none !important;">
+<!--     상단바     -->
+		<div class="container my-5" style="width: 1920px; max-width: none !important;">
+				<div class="top-bar"></div>
+				<div class="top-text"><p><br>KTH</p></div>
+		</div>
+<!--       메뉴버튼        -->
+		<div class="container" style="width: 1300px; padding:0; max-width: none !important;">
+			<div class="row justify-content-start mx-0 gx-0 p-0" style="width: 608px; max-width: none !important; height: 40px;">
+				<div class="col-auto colBB">
+					<button type="button" class="btn btn-outline-warning btn-lg" style="--bs-btn-hover-color: rgb(0, 200, 200); --bs-btn-border-color: #ddd; --bs-btn-hover-bg: rgb(255, 236, 6); --bs-btn-hover-border-color: rgb(255, 236, 6); --bs-btn-color: #aaa; --bs-btn-padding-x: .8rem; --bs-btn-font-size: .9rem; margin-top: 4px;">
+						<i class="fa-solid fa-bars"></i>
+					</button>
+				</div>
+				<div class="col-auto colBB">
+					<span style="font-size: 30px; padding-left: 5px;">회원관리</span>
+				</div>
+			</div>
+		</div>
+<!--        내용1        -->
+		<div class="container p-0" style="width: 1300px; text-align:left; max-width: none !important;">
+			<div class="row justify-content-center py-5">
+				<div class="col-auto"><h3>기본정보</h3></div>
+			</div>
+			<div class="row p-0 m-0">
+<!--        왼쪽         -->
+				<div class="col-2 my-0 p-0" style="width:150px;">
+					<div class="row justify-content-center">
+						<div class="col-auto p-0" style="height: auto;">
+							<img alt="" src="../image/person.png" style="width: 150px; height: 160px;">
+						</div>
+					</div>
+					<div class="container">
+						<div class="row my-2" style="height: 25px;">
+							<div class="col-3 p-0" style="text-align: right;"><span>ID</span></div>
+							<div class="col">
+								<input type="text" placeholder="6~12자" value="">
+							</div>
+						</div>
+						<div class="row my-0" style="height: 25px;">
+							<div class="col-3 p-0" style="text-align: right;"><span>권한</span></div>
+							<div class="col">
+								<input type="text" placeholder="관리자/회원" value="">
+							</div>
+						</div>
+					</div>
+				</div>
+<!--        오른쪽         -->
+				<div class="col colLL">
+					<div class="container">
+						<div class="row">
+							<div class="col-1">이름</div>
+							<div class="col-4">
+								<input type="text" placeholder="..." value="">
+							</div>
+							<div class="col-2 colLL offset-1">기본배송지</div>
+							<div class="col-4">
+								<input type="text" placeholder="..." value="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-1">주소</div>
+							<div class="col-4">
+								<input type="text" placeholder="..." value="">
+							</div>
+							<div class="col-2 colLL offset-1">포인트</div>
+							<div class="col-4">
+								<input type="text" placeholder="..." value="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-1">이메일</div>
+							<div class="col-4">
+								<input type="text" placeholder="..." value="">
+							</div>
+							<div class="col-2 colLL offset-1">총 구매금액</div>
+							<div class="col-4">
+								<input type="text" placeholder="..." value="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-1">성별</div>
+							<div class="col-4">
+								<input type="text" placeholder="..." value="">
+							</div>
+							<div class="col-2 colLL offset-1">가입일</div>
+							<div class="col-4">
+								<input type="date" value="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-1">나이</div>
+							<div class="col-4">
+								<input type="text" placeholder="..." value="">
+							</div>
+							<div class="col-2 colLL offset-1">회원등급</div>
+							<div class="col-4">
+							<select name="grade" style="width: 100%;">
+								<option value="">등급
+								<option value="불량회원">불량회원
+								<option value="일반회원">일반회원
+								<option value="우수회원">우수회원
+								<option value="VIP회원">VIP회원
+							</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><br><br>
+<!--  주문내역    -->
+		<div class="container containerOrder" style="width: 1300px; max-width: none !important;">
+			<div class="row justify-content-center" style="margin-bottom: 30px;">
+				<div class="col-auto"><h3>주문내역</h3></div>
+			</div>
+			<div class="row justify-content-center colT" style="text-align: center;">
+				<div class="colB colR colL colH col-1">날짜</div>
+				<div class="colB colR colH col-5">배송지</div>
+				<div class="colB colR colH col-1">금액</div>
+				<div class="colB colR colH col-1">받는분</div>
+				<div class="colB colR colH col-1">사용쿠폰</div>
+				<div class="colB colR colH col-1">배송상태</div>
+				<div class="colB colR colH col">송장번호</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+		</div>
+<!--    장바구니   -->
+		<div class="container containerOrder" style="width: 1300px; max-width: none !important;">
+			<div class="row justify-content-center my-4">
+				<div class="col-auto"><h3>장바구니</h3></div>
+			</div>
+			<div class="row justify-content-center colT" style="text-align: center;">
+				<div class="colB colR colL colH col-1">날짜</div>
+				<div class="colB colR colH col-5">배송지</div>
+				<div class="colB colR colH col-1">금액</div>
+				<div class="colB colR colH col-1">받는분</div>
+				<div class="colB colR colH col-1">사용쿠폰</div>
+				<div class="colB colR colH col-1">배송상태</div>
+				<div class="colB colR colH col">택배사</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+		</div>
+<!--    Q&A     -->
+		<div class="container containerOrder" style="width: 1300px; max-width: none !important;">
+			<div class="row justify-content-center my-4">
+				<div class="col-auto"><h3>Q&A</h3></div>
+			</div>
+			<div class="row justify-content-center colT" style="text-align: center;">
+				<div class="colB colR colL colH col-1">날짜</div>
+				<div class="colB colR colH col-5">배송지</div>
+				<div class="colB colR colH col-1">금액</div>
+				<div class="colB colR colH col-1">받는분</div>
+				<div class="colB colR colH col-1">사용쿠폰</div>
+				<div class="colB colR colH col-1">배송상태</div>
+				<div class="colB colR colH col">택배사</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+		</div>
+<!--    리뷰      -->
+		<div class="container containerOrder" style="width: 1300px; max-width: none !important;">
+			<div class="row justify-content-center my-4">
+				<div class="col-auto"><h3>등록 리뷰</h3></div>
+			</div>
+			<div class="row justify-content-center colT" style="text-align: center;">
+				<div class="colB colR colL colH col-1">날짜</div>
+				<div class="colB colR colH col-5">배송지</div>
+				<div class="colB colR colH col-1">금액</div>
+				<div class="colB colR colH col-1">받는분</div>
+				<div class="colB colR colH col-1">사용쿠폰</div>
+				<div class="colB colR colH col-1">배송상태</div>
+				<div class="colB colR colH col">택배사</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+			<div class="row justify-content-center" style="text-align: center;">
+				<div class="colB colR colL col-1">-</div>
+				<div class="colB colR col-5">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="colB colR col-1">-</div>
+				<div class="col colB colR">-</div>
+			</div>
+		</div>
+		
+		
+
+
+	</div>
+	<script src="https://kit.fontawesome.com/fa73f5dd30.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	</body>
+</html>

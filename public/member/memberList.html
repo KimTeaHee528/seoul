@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>리스트</title>
+	<link href="../css/memberList.css" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<!-- 가장 바깥 -->
+	<div class="container" style="width: 1920px; max-width: none !important;">
+<!--     상단바     -->
+		<div class="container p-2" style="width: 1920px; max-width: none !important;">
+			<div class="row" style="width: 1920px; position:relative; top:0px; max-width: none !important; height: 40px;">
+				<div class="top-bar"></div>
+				<div class="top-text"><p><br>KTH</p></div>
+			</div>
+		</div>
+		<!--       메뉴버튼        -->
+		<div class="container" style="width: 1300px; max-width: none !important;">
+			<div class="row justify-content-start mx-0 gx-0 p-0" style="position:relative; top:120px; max-width: none !important; height: 40px;">
+				<div class="col-auto">
+					<button type="button" class="btn btn-outline-warning btn-lg" style="--bs-btn-hover-color: rgb(0, 200, 200); --bs-btn-border-color: rgb(0,200,200); --bs-btn-hover-bg: rgb(255, 236, 6); --bs-btn-hover-border-color: rgb(255, 236, 6); --bs-btn-color: rgb(0,200,200); --bs-btn-padding-x: 1.2rem; --bs-btn-font-size: 1.2rem;">
+						<i class="fa-solid fa-bars"></i>
+					</button>
+				</div>
+			</div>
+		</div><br><br><br><br><br>
+<!--      검색메뉴         -->
+		<div class="container p-2" style="width: 1300px; max-width: none !important;">
+			<div class="row justify-content-center">
+				<h1>회원관리</h1><br><br><br><br>
+				<div class="row justify-content-center mx-2 gx-2 gy-1 p-0">
+					<div class="col-1">관리자여부</div>
+					<div class="col-2">등록일</div>
+					<div class="col-2">시작일</div>
+					<div class="col-2">종료일</div>
+					<div class="col-1">검색구분</div>
+					<div class="col-1">검색어</div>
+				</div>
+				<div class="row justify-content-center mx-2 gx-2 gy-1 p-0">
+					<div class="col-1">
+						<select name="gender" style="width: 100%;">
+							<option value="">N
+							<option value="뭔지모름">뭔지모름
+							<option value="뭔지모름">뭔지모름
+							<option value="뭔지모름">뭔지모름
+						</select>
+					</div>
+					<div class="col-2">
+						<input type="date" placeholder="등록일">
+					</div>
+					<div class="col-2">
+						<input type="date" placeholder="시작일">
+					</div>
+					<div class="col-2">
+						<input type="date" placeholder="종료일">
+					</div>
+					<div class="col-1">
+						<select name="gender" style="width: 100%;">
+							<option value="">검색구분
+							<option value="뭔지모름">뭔지모름
+							<option value="뭔지모름">뭔지모름
+							<option value="뭔지모름">뭔지모름
+						</select>
+					</div>
+					<div class="col-1">
+						<input type="text" placeholder="검색어..." style="width: 105%;">
+					</div>
+				</div>
+				<div class="row justify-content-center mx-2 gx-2 p-0">
+					<div class="col-auto gx-1 gy-3">
+						<button type="button" class="btn btn-outline-warning btn-lg" style="--bs-btn-hover-color: rgb(0, 200, 200); --bs-btn-border-color: #ddd; --bs-btn-hover-bg: rgb(255, 236, 6); --bs-btn-hover-border-color: rgb(255, 236, 6); --bs-btn-color: #ddd; --bs-btn-padding-x: 0.75rem; --bs-btn-font-size: .9rem;">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+						<button type="button" class="btn btn-outline-warning btn-lg" style="--bs-btn-hover-color: rgb(0, 200, 200); --bs-btn-border-color: #ddd; --bs-btn-hover-bg: rgb(255, 236, 6); --bs-btn-hover-border-color: rgb(255, 236, 6); --bs-btn-color: #ddd; --bs-btn-padding-x: 0.75rem; --bs-btn-font-size: .9rem;">
+							<i class="fa-solid fa-arrows-rotate"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--           table             -->
+		<div class="container p-2" style="width: 1300px; max-width: none !important;">
+			<table class="table table-hover">
+				<tr>
+					<th width="150px;">
+						<div class="row justify-content-center">
+							<div class="col-auto" style="padding:0px;"><input type="checkbox" name="num0" id="n0" onclick="selectAll(this)"></div>
+							<div class="col-auto" style="padding:0px;">&nbsp;선택</div>
+						</div>
+					</th>
+					<th>번호</th>
+					<th>이름</th>
+					<th>성별</th>
+					<th>주소</th>
+					<th>이메일</th>
+					<th>가입일</th>
+					<th>관리자여부</th>
+				</tr>
+				<tr style="border-top: 2px solid rgb(0, 200, 200);" onclick="location.href='./memberview.html';">
+					<td><input type="checkbox" name="num" id="n1"></td>
+					<td>01</td>
+					<td>김태희</td>
+					<td>남자</td>
+					<td>서울 관악구 중앙동</td>
+					<td>spmm528@gmail.com</td>
+					<td>2022.07.01</td>
+					<td>Y</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="num" id="n2"></td>
+					<td>02</td>
+					<td>김천재</td>
+					<td>남자</td>
+					<td>서울 관악구 봉천동</td>
+					<td>spmm528@gmail.com</td>
+					<td>2022.07.05</td>
+					<td>N</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="num" id="n3"></td>
+					<td>03</td>
+					<td>아이유</td>
+					<td>여자</td>
+					<td>서울 관악구 중앙동</td>
+					<td>spmm528@gmail.com</td>
+					<td>2022.07.05</td>
+					<td>N</td>
+				</tr>
+			</table>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-auto">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination">
+						<li class="page-item disabled">
+							<a class="page-link">Previous</a>
+						</li>
+						<li class="active"><a class="page-link" href="#">1</a></li>
+						<li><a class="page-link" href="#">2</a></li>
+						<li><a class="page-link" href="#">3</a></li>
+						<li>
+							<a class="page-link" href="#">Next</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+  				<div class="col-auto"> 
+				<div class="btn-group" role="group" aria-label="Basic example">
+					<button type="button" class="btn btn-outline-secondary" style="--bs-btn-hover-color: rgb(0, 200, 200); --bs-btn-border-color: #ddd; --bs-btn-hover-bg: rgb(255, 236, 6); --bs-btn-hover-border-color: rgb(255, 236, 6);">삭제</button>
+					<button type="button" class="btn btn-outline-secondary" onclick="modFormLink()" style="--bs-btn-hover-color: rgb(0, 200, 200); --bs-btn-border-color: #ddd; --bs-btn-hover-bg: rgb(255, 236, 6); --bs-btn-hover-border-color: rgb(255, 236, 6);">
+					수정
+					</button>
+					<button type="button" class="btn btn-outline-secondary" onclick="RegFormLink()" style="--bs-btn-hover-color: rgb(0, 200, 200); --bs-btn-border-color: #ddd; --bs-btn-hover-bg: rgb(255, 236, 6); --bs-btn-hover-border-color: rgb(255, 236, 6);">
+						등록
+					</button>
+				</div>
+  				</div>
+		</div>			
+	</div>
+	<script src="https://kit.fontawesome.com/fa73f5dd30.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../script/list.js"></script>
+	</body>
+</html>

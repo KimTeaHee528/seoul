@@ -1,0 +1,99 @@
+.top-text{
+	display:inline-block;
+	position: relative;
+	top: -287px;
+	height: 75px;
+	text-align: center;
+}
+.top-bar{
+	text-align: right;
+	display:inline-block;
+	position: relative;
+	top: 95px;
+	left:0px;
+	background-color: rgb(255, 236, 6);
+	width:1920px;
+	height: 65px;
+	vertical-align: middle;
+}
+p{
+	font-family: topFont;
+	font-size: 135px;
+}
+input:hover, select:hover {
+	background: none;
+	border: 1px solid rgb(255, 236, 6);
+	color: black;
+/* 	outline: none;
+	box-shadow: none; */
+}
+input, select {
+	outline: none;
+	box-shadow: none;
+	border: 1px solid #ddd;
+	color:black;
+	border-radius: 7px;
+	background: none;
+	height: 90%;
+	font-size: 100%;
+	width: 100%;
+	height: 120%
+}
+.pagination > li >a{
+    color: #5a5a5a;
+    background-color: white;
+    border-color: #ddd;
+}
+.pagination > li > a:hover{
+    color: rgb(0,200,200);
+    background-color: rgb(255, 236, 6);
+    border-color: rgb(255, 236, 6);
+}
+.pagination>li.active>a {
+	background: white;
+	color: rgb(0,200,200);
+	border-color: rgb(0,200,200);
+}
+@font-face {
+	font-family: 'topFont';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Black.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+.table table-hover > tr > th{
+	border-top: 2px solid rgb(0, 200, 200);
+}
+
+/*  
+	div{
+		border: 1px solid red;
+		box-sizing: border-box;
+	}
+	
+	.container{
+		border: 1px solid black;
+	}
+
+    */
+.offcanvas-head{
+	font-size: 30px;
+			
+}
+.offcanvas-body{
+	font-size: 25px;
+}
+h1{
+	text-align: center;
+}
+table {
+   	margin:auto; 
+ 			border-collapse: collapse; 
+}
+table, th, td{
+		border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+.offcanvas offcanvas-top{
+	--offcanvas-height: 3000px;
+}
