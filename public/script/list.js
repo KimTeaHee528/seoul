@@ -5,7 +5,7 @@ function modFormLink()
 
 function RegFormLink()
 {
-     location.href = "./memberRegForm.html";
+     location.href = "./memberReg2.html";
 }
 
 function selectAll(selectAll)  {

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>로그인</title>
+	<link href="../css/memberLoginForm.css" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<!-- 가장 바깥 -->
+	<div class="container p-0" style="width: 1920px; max-width: none !important;">
+<!--     상단바     -->
+		<div class="container my-5 p-0" style="width: 1920px; max-width: none !important;">
+				<div class="top-bar"></div>
+				<div class="top-text"><p><br>KTH</p></div>
+		</div>
+		<!--       메뉴버튼        -->
+<!--      검색메뉴         -->
+		<div class="container p-2" style="width: 400px; max-width: none !important;">
+			<div class="row justify-content-center">
+				<div class="row justify-content-start mx-2 gx-2 gy-1 p-0">
+					<div class="col-1">ID</div> 
+				</div>
+				<div class="row justify-content-start mx-2 gx-2 gy-1 p-0">
+					<div class="col">
+						<input type="text" placeholder="" value="xdmin">
+					</div> 
+				</div>
+				<div class="row justify-content-start mx-2 gx-2 gy-1 p-0">
+					<div class="col-1">PW</div> 
+				</div>
+				<div class="row justify-content-start mx-2 gx-2 gy-1 p-0">
+					<div class="col">
+						<input type="password" placeholder="" value="56f1">
+					</div> 
+				</div>
+				<div class="row justify-content-start mx-2 gx-2 gy-1 p-0">
+					<div class="col">
+						<input type="password" placeholder="" value="56f1">
+					</div> 
+				</div>
+				
+				
+				
+				
+				
+				<div class="row justify-content-center mx-2 gx-2 p-0">
+					<div class="col-auto gx-1 gy-3">
+						<button type="button" class="btn btn-outline-warning btn-lg" style="--bs-btn-hover-color: rgb(0, 200, 200); --bs-btn-border-color: #ddd; --bs-btn-hover-bg: rgb(255, 236, 6); --bs-btn-hover-border-color: rgb(255, 236, 6); --bs-btn-color: #ddd; --bs-btn-padding-x: 0.75rem; --bs-btn-font-size: .9rem;">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+						<button type="button" class="btn btn-outline-warning btn-lg" style="--bs-btn-hover-color: rgb(0, 200, 200); --bs-btn-border-color: #ddd; --bs-btn-hover-bg: rgb(255, 236, 6); --bs-btn-hover-border-color: rgb(255, 236, 6); --bs-btn-color: #ddd; --bs-btn-padding-x: 0.75rem; --bs-btn-font-size: .9rem;">
+							<i class="fa-solid fa-arrows-rotate"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--        하단 버튼들           -->
+		<div class="row justify-content-center">
+  				<div class="col-auto"> 
+				<div class="btn-group" role="group" aria-label="Basic example">
+					<button type="button" class="btn btn-outline-secondary" style="--bs-btn-hover-color: rgb(0, 200, 200); --bs-btn-border-color: #ddd; --bs-btn-hover-bg: rgb(255, 236, 6); --bs-btn-hover-border-color: rgb(255, 236, 6);">삭제</button>
+					<button type="button" class="btn btn-outline-secondary" onclick="modFormLink()" style="--bs-btn-hover-color: rgb(0, 200, 200); --bs-btn-border-color: #ddd; --bs-btn-hover-bg: rgb(255, 236, 6); --bs-btn-hover-border-color: rgb(255, 236, 6);">
+					수정
+					</button>
+					<button type="button" class="btn btn-outline-secondary" onclick="RegFormLink()" style="--bs-btn-hover-color: rgb(0, 200, 200); --bs-btn-border-color: #ddd; --bs-btn-hover-bg: rgb(255, 236, 6); --bs-btn-hover-border-color: rgb(255, 236, 6);">
+						등록
+					</button>
+				</div>
+  				</div>
+		</div>			
+	</div>
+	<script src="https://kit.fontawesome.com/fa73f5dd30.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../script/list.js"></script>
+	</body>
+</html>

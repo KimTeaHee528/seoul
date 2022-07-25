@@ -9,28 +9,36 @@
 </head>
 <body>
 <!-- 가장 바깥 -->
-	<div class="container" style="width: 1920px; max-width: none !important;">
+	<div class="container p-0" style="width: 1920px; max-width: none !important;">
 <!--     상단바     -->
-		<div class="container p-2" style="width: 1920px; max-width: none !important;">
-			<div class="row" style="width: 1920px; position:relative; top:0px; max-width: none !important; height: 40px;">
+		<div class="container my-5 p-0" style="width: 1920px; max-width: none !important;">
 				<div class="top-bar"></div>
 				<div class="top-text"><p><br>KTH</p></div>
-			</div>
 		</div>
 		<!--       메뉴버튼        -->
-		<div class="container" style="width: 1300px; max-width: none !important;">
-			<div class="row justify-content-start mx-0 gx-0 p-0" style="position:relative; top:120px; max-width: none !important; height: 40px;">
+		<div class="container" style="width: 1300px; padding:0; max-width: none !important;">
+			<div class="row justify-content-start mx-0 gx-0 p-0" style="width: 608px; max-width: none !important; height: 40px;">
 				<div class="col-auto">
-					<button type="button" class="btn btn-outline-warning btn-lg" style="--bs-btn-hover-color: rgb(0, 200, 200); --bs-btn-border-color: rgb(0,200,200); --bs-btn-hover-bg: rgb(255, 236, 6); --bs-btn-hover-border-color: rgb(255, 236, 6); --bs-btn-color: rgb(0,200,200); --bs-btn-padding-x: 1.2rem; --bs-btn-font-size: 1.2rem;">
-						<i class="fa-solid fa-bars"></i>
-					</button>
+				<div class="btn-group">
+						<button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 0px; background-color: black; --bs-btn-hover-color: white; --bs-btn-color: white; --bs-btn-active-color: white; --bs-btn-active-border-color: white;">
+							메뉴
+						</button>
+						<ul class="dropdown-menu" style="border-radius: 0px; top:0; left: -55px;">
+							<li><a class="dropdown-item" href="#">코드그룹 관리</a></li>
+							<li><a class="dropdown-item" href="#">코드 관리</a></li>
+							<li><a class="dropdown-item" href="#">회원관리</a></li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="col-auto">
+					<span style="font-size: 21px; padding-left: 5px;">회원관리</span>
 				</div>
 			</div>
-		</div><br><br><br><br><br>
+		</div>
 <!--      검색메뉴         -->
 		<div class="container p-2" style="width: 1300px; max-width: none !important;">
 			<div class="row justify-content-center">
-				<h1>회원관리</h1><br><br><br><br>
 				<div class="row justify-content-center mx-2 gx-2 gy-1 p-0">
 					<div class="col-1">관리자여부</div> 
 					<div class="col-2">등록일</div>
@@ -99,7 +107,7 @@
 					<th>가입일</th>
 					<th>관리자여부</th>
 				</tr>
-				<tr style="border-top: 2px solid rgb(0, 200, 200);" onclick="location.href='./memberview.html';">
+				<tr style="border-top: 2px solid rgb(0, 200, 200); cursor: pointer;" onclick="location.href='./memberview.html';">
 					<td><input type="checkbox" name="num" id="n1"></td>
 					<td>01</td>
 					<td>김태희</td>
@@ -109,7 +117,7 @@
 					<td>2022.07.01</td>
 					<td>Y</td>
 				</tr>
-				<tr>
+				<tr style="cursor: pointer;" onclick="location.href='./memberview.html';">
 					<td><input type="checkbox" name="num" id="n2"></td>
 					<td>02</td>
 					<td>김천재</td>
@@ -119,7 +127,7 @@
 					<td>2022.07.05</td>
 					<td>N</td>
 				</tr>
-				<tr>
+				<tr style="cursor: pointer;" onclick="location.href='./memberview.html';">
 					<td><input type="checkbox" name="num" id="n3"></td>
 					<td>03</td>
 					<td>아이유</td>
@@ -131,6 +139,7 @@
 				</tr>
 			</table>
 		</div>
+<!--        하단 버튼들           -->
 		<div class="row justify-content-center">
 			<div class="col-auto">
 				<nav aria-label="Page navigation example">
