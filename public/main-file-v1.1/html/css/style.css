@@ -1434,7 +1434,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
       SPECIAL OFFERS
 ========================================================*/
 .special-offers {
-	background: #f7f7f7 url(../images/special-bg.jpg) top center no-repeat;
+	background: #f7f7f7 url(../images/test.png) top center no-repeat;
 	background-size: cover;
 	padding: 19% 0;
 }
@@ -3364,23 +3364,30 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
       SUB BANNER
 ========================================================*/
 .sub-bnr {
-	background: url(../images/sub-bnr-bg.jpg) no-repeat;
+	background: url(../images/product_list_top.png) no-repeat;
 	background-size: cover !important;
 	min-height: 610px;
 	text-align: center;
 	position: relative;
 }
-.sub-bnr h4 {
-	font-size: 25px;
+.sub-bnr h2 {
+	font-size: 35px;
 	color: #fff;
 	font-weight: bold;
 	letter-spacing: 6px;
 	margin-top: 0px;
 }
 .sub-bnr p {
-	color: #666666;
+	color: #fff;
 	letter-spacing: 0px;
-	font-family: 'Playfair Display', serif;
+	font-size: 14px;
+	margin-top: 20px;
+	max-width: 590px;
+	margin: 0 auto;
+}
+.sub-bnr span {
+	color: #fff;
+	letter-spacing: 0px;
 	font-size: 14px;
 	margin-top: 20px;
 	max-width: 590px;
@@ -3396,6 +3403,19 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	display: inline-block;
 	border-radius: 20px;
 }
+.sub-bnr .btn-small {
+	margin-top : 30px;
+	padding: 0 20px;
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 1px;
+	color: #fff;
+	border-color : #fff;
+}
+.sub-bnr .btn-small:hover {
+	border-color : #2d3a4b;
+}
+
 .breadcrumb>li+li:before {
 	padding: 0 10px;
 }
