@@ -21,12 +21,29 @@ p{
 .colBB{
 	border-bottom: 1px solid rgb(255, 236, 6);
 }
+.tbtn > .btn-outline-warning{
+	--bs-btn-hover-color: rgb(0, 200, 200);
+	--bs-btn-border-color: #ddd;
+	--bs-btn-hover-bg: rgb(255, 236, 6);
+	--bs-btn-hover-border-color: rgb(255, 236, 6);
+	--bs-btn-color: #ddd;
+	--bs-btn-padding-x: 0.75rem;
+	--bs-btn-font-size: .9rem;
+}
+
+
 input:hover, select:hover {
 	background: none;
 	border: 1px solid rgb(255, 236, 6);
 	color: black;
 /* 	outline: none;
 	box-shadow: none; */
+}
+.btn-group>.btn-outline-secondary{
+	--bs-btn-hover-color:rgb(0, 200, 200);
+	--bs-btn-border-color: #ddd;
+	--bs-btn-hover-bg: rgb(255, 236, 6);
+	--bs-btn-hover-border-color: rgb(255, 236, 6);
 }
 input, select {
 	outline: none;

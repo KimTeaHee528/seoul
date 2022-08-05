@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="ko">
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>로그인</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<style type="text/css">
+		@font-face {
+			font-family: 'topFont';
+			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Black.woff2') format('woff2');
+			font-weight: normal;
+			font-style: normal;
+		}
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		div{
+			display: inline-block;
+		}
+		input:hover{
+			background: none;
+			border: 1px solid rgb(255, 236, 6);
+			color: black;
+		}
+		input, select {
+			outline: none;
+			box-shadow: none;
+			border: 1px solid #ddd;
+			color:black;
+			border-radius: 6px;
+			font-size: 100%;
+			margin-bottom: 50px;
+			width: 95%;
+		}
+		.con0{
+			width: 1920px; 
+			max-width: none !important;
+		}
+		.top1{
+			width: 1920px; 
+			max-width: none !important;
+			height: 55px;
+		}
+		.top-l{
+			margin-top:5px;
+			display:inline-block;
+			float:left;
+			height: 44px;
+		}
+		.logo{
+			margin-left: 10px;
+		}
+		.top-l-text{
+			position:relative;
+			top:4px;
+			margin-left: 30px;
+			font-family: topFont;
+			font-size: 20px;
+		}
+		.top-r{
+			margin-top: 5px;
+			margin-right: 15px;
+			display: inline-block;
+			float: right;
+			height: 44px;
+		}
+		.top-profile{
+			margin-right: 100px;
+			height: 44px;
+		}
+		.top-profile-img-box{
+			display: inline-block;
+		}
+		.top-profile-img{
+			margin-bottom:20px;
+			height: 44px;
+			width: 44px;
+		}
+		.top-member-id{
+			display:block;
+			margin-top:4px;
+			margin-bottom:5px;
+			font-family: topFont;
+			font-size: 10px;
+		}
+		.top-member-grade{
+			display:block;
+			margin:0px;
+			font-family: topFont;
+			font-size: 10px;
+		}
+		.select-lang-box{
+			display: block;
+			float: right;
+			margin: 9px;
+			margin-left: 100px;
+			margin-right: 0px;
+		}
+		.select-lang{
+			display: inline-block;
+		}
+		.nav-bar{
+			width: 1920px; 
+			padding-top:3px;
+			padding-left:10px;
+			height: 40px;
+			background-color: rgb(200,240,255);
+		}
+		.nv-name{
+			display:inline-block;
+			color: black;
+			font-style: inherit;
+			margin-right: 20px;
+			cursor: pointer;
+			font-size: 20px;
+		}
+		.nv{
+			display:inline-block;
+			color: black;
+			font-style: inherit;
+			margin-right: 20px;
+			cursor: pointer;
+		}
+		.codeee{
+			font-size: 30px;
+		}
+		.box{
+			position: absolute;
+			top:160px;
+			left: 65px;
+			width: 1800px;
+/* 			background-color: blue; */
+			max-width: none;
+		}
+		.col-6>.row{
+			height: 40px;
+		}
+		.check{
+			width: auto;
+		}
+	</style>
+</head>
+<body>
+<!-- 가장 바깥 -->
+	<div class="con0">
+<!--     상단     -->
+		<div class="top1">
+			<div class="top-l">
+				<div class="logo">
+					<img alt="로고로고" src="../image/logo.png">
+				</div>
+				<div>
+					<span class="top-l-text">
+						ABC Management System
+					</span>
+				</div>
+			</div>
+			<div class="top-r">
+				<div class="top-profile">
+					<div class="top-profile-img-box">
+						<img class="top-profile-img" alt="로고로고" src="../image/profile.png">
+					</div>
+					<div class="top-prifile-id">
+						<p class="top-member-id">
+							spm528
+						</p>
+						<p class="top-member-grade">
+							Administrator
+						</p>
+					</div>
+					<div class="select-lang-box">
+						<select classs="select-lang">
+							<option value="한국어">언어
+							<option value="한국어">한국어
+							<option value="영어">영어
+							<option value="일본어">일본어
+							<option value="중국어">중국어
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--    네비바    -->
+		<div class="nav-bar">
+			<a class="nv-name">
+				Navbar
+			</a>
+			<P class="nv">회원관리</P>
+			<P class="nv">서비스관리</P>
+			<P class="nv">사이트관리</P>
+			<P class="nv">로그관리</P>
+			<P class="nv">시스템관리</P>
+		</div>
+	<!--    내용    -->
+		<div class="codeee">Code</div>
+			<div class="container box">
+				<div class="row">
+					<div class="col-6">
+						<div class="row">
+							<div class="col-auto">
+								<p>아이디</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<input type="text" placeholder="영문(대소문자)숫자, 특수문자(), 4~20자리 조합">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-auto">
+								<p>비밀번호</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<input type="text" placeholder="영문(대소문자)숫자, 특수문자(), 8~20자리 조합">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-auto">
+								<p>이름</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<input type="text" placeholder="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-auto">
+								<p>이름</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<input type="text" placeholder="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-auto">
+								<p>이름 (영문0)</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<input type="text" placeholder="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-auto">
+								<p>성별</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<select>
+									<option value="-">::선택::
+									<option value="남자">남자
+									<option value="여자">여자
+									<option value="기타">기타
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-auto">
+								<p>이메일</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<input type="text" placeholder="name@example.com">
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="row">
+							<div class="col-auto">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-auto">
+								<p>비밀번호 확인</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<input type="text" placeholder="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-auto">
+								<p>이름 (영문)</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<input type="text" placeholder="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-auto">
+								<p>성</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<input type="text" placeholder="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-auto">
+								<p>성 (영문)</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<input type="text" placeholder="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-auto">
+								<p>생일</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<input type="text" placeholder="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-auto">
+								<p>이메일 정보 마케팅 사용 동의</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<input class="check" type="checkbox" placeholder="">동의합니다.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

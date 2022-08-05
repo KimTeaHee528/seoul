@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>로그인</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<style type="text/css">
+		@font-face {
+			font-family: 'topFont';
+			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Black.woff2') format('woff2');
+			font-weight: normal;
+			font-style: normal;
+		}
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.con0{
+			width: 1920px; 
+			max-width: none !important;
+		}
+		.container > .con1{
+			width: 400px; 
+			max-width: none !important;
+		}
+		.container > .con2{
+			position: relative;
+			top: 190px;
+			width: 400px; 
+			max-width: none !important;
+			
+		}
+		.top-text-box{
+			position: relative;
+			top: 0px;
+			height: 30px;
+			text-align: center;
+		}
+		.top-text-box > p{
+			font-family: topFont;
+			font-size: 50px;
+		}
+		input:hover{
+			background: none;
+			border: 1px solid rgb(255, 236, 6);
+			color: black;
+		}
+		input, select {
+			outline: none;
+			box-shadow: none;
+			border: 1px solid #ddd;
+			color:black;
+			border-radius: 7px;
+			background: none;
+			height: 90%;
+			font-size: 100%;
+			width: 100%;
+			height: 120%
+		}
+		.col > .btn-outline-warning{
+			text-align:center; 
+			width:100%; 
+			--bs-btn-hover-color: black; 
+			--bs-btn-border-color: none; 
+			--bs-btn-hover-bg: rgb(255, 246, 36); 
+			--bs-btn-hover-border-color: rgb(255, 236, 6); 
+			--bs-btn-bg: rgb(255, 255, 0); 
+			--bs-btn-color: #090909; 
+			--bs-btn-padding-x: 0.75rem; 
+			--bs-btn-font-size: .9rem;
+		}
+		.col > .btn-outline-success{
+			text-align:center; 
+			width:100%; 
+			--bs-btn-hover-color: #fff; 
+			--bs-btn-border-color: none; 
+			--bs-btn-hover-bg: rgb(0, 175, 0); 
+			--bs-btn-hover-border-color: #fff; 
+			--bs-btn-bg: rgb(0, 205, 0); 
+			--bs-btn-color: #fff; 
+			--bs-btn-padding-x: 0.75rem; 
+			--bs-btn-font-size: .9rem;
+		}
+		.col > .btn-outline-info{
+			text-align:center; 
+			width:100%; 
+			--bs-btn-hover-color: #fff; 
+			--bs-btn-border-color: none; 
+			--bs-btn-hover-bg: rgb(225, 0, 0); 
+			--bs-btn-hover-border-color: #fff; 
+			--bs-btn-bg: rgb(255, 0, 0); 
+			--bs-btn-color: #fff; 
+			--bs-btn-padding-x: 0.75rem; 
+			--bs-btn-font-size: .9rem;
+		}
+		.col > .btn-outline-primary{
+			text-align:center; 
+			width:100%; 
+			--bs-btn-hover-color: #fff; 
+			--bs-btn-border-color: none; 
+			--bs-btn-hover-bg: rgb(0, 0, 175); 
+			--bs-btn-hover-border-color: #fff; 
+			--bs-btn-bg: rgb(0, 0, 205); 
+			--bs-btn-color: #fff; 
+			--bs-btn-padding-x: 0.75rem; 
+			--bs-btn-font-size: .9rem;
+		}
+		.col > .btn-outline-secondary{
+			text-align:center; 
+			width:100%; 
+			--bs-btn-hover-color: rgb(0, 200, 200); 
+			--bs-btn-border-color: #ddd; 
+			--bs-btn-hover-bg: rgb(255, 236, 6); 
+			--bs-btn-hover-border-color: rgb(255, 236, 6); 
+			--bs-btn-color: #090909; 
+			--bs-btn-bg: #bbb; 
+			--bs-btn-padding-x: 0.75rem; 
+			--bs-btn-font-size: .9rem;
+		}
+	</style>
+</head>
+<body>
+<!-- 가장 바깥 -->
+	<div class="container con0 p-0">
+<!--     상단     -->
+		<div class="container con1 my-5 p-0">
+			<div class="top-text-box">
+				<p>your</p>
+				<p>Company</p>
+				<p>Logo</p>
+			</div>
+		</div>
+<!--   가운데 내용물      -->
+		<div class="container con2 p-2">
+			<div class="row justify-content-center">
+				<div class="row justify-content-start mx-2 gx-2 gy-0 p-0" style="height: 25px; margin-bottom: 5px;">
+					<div class="col-auto">ID</div> 
+				</div>
+				<div class="row justify-content-start mx-2 gx-2 gy-0 p-0" style="height: 30px; margin-bottom: 15px;">
+					<div class="col">
+						<input type="text" placeholder="" value="xdmin">
+					</div>
+				</div>
+				<div class="row justify-content-start mx-2 gx-2 gy-0 p-0 my-2" style="height: 25px; margin-bottom: 5px;">
+					<div class="col-auto" style="height: auto;">PW</div>
+				</div>
+				<div class="row justify-content-start mx-2 gx-2 gy-0 p-0" style="height: 30px;">
+					<div class="col">
+						<input type="password" placeholder="" value="56f1">
+					</div> 
+				</div><br>
+				<div class="row justify-content-start mx-2 gx-2 gy-0 p-0" style="height: 30px;">
+					<div class="col-auto">
+						<div class="form-check form-switch">
+							<input class="form-check-input" type="checkbox" role="switch" id="Auto Login" checked>
+							<label class="form-check-label" for="Auto Login">Auto Login</label>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-start mx-2 gx-2 gy-0 p-0" style="height: 30px;">
+					<div class="col">
+						<button type="button" class="btn btn-outline-secondary btn-lg">
+							<span style="font-size: 18px;"><b>Login</b></span>
+						</button>
+					</div> 
+				</div>
+				<div class="row justify-content-center mx-2 gx-2 p-0">
+					<div class="col-auto gx-1 gy-3">
+						<a href="https://nid.naver.com/user2/help/pwInquiry.nhn?menu=pwinquiry">Find Id/Password</a>
+					</div><hr>
+				</div>
+				<div class="row justify-content-center mx-2 gx-2 p-0"></div>
+				<div class="row justify-content-start mx-2 gx-2 p-0">
+				</div>
+				<div class="row justify-content-start mx-2 gx-2 p-0 my-1">
+					<div class="col">
+						<button type="button" class="btn btn-outline-warning kakao btn-lg">
+							<b>Kakao 로그인</b>
+						</button>
+					</div> 
+				</div>
+				<div class="row justify-content-start mx-2 gx-2 p-0 my-1">
+					<div class="col">
+						<button type="button" class="btn btn-outline-success btn-lg">
+							<b>Naver 로그인</b>
+						</button>
+					</div> 
+				</div>
+				<div class="row justify-content-start mx-2 gx-2 p-0 my-1">
+					<div class="col">
+						<button type="button" class="btn btn-outline-info btn-lg">
+							<b>Google 로그인</b>
+						</button>
+					</div> 
+				</div>
+				<div class="row justify-content-start mx-2 gx-2 p-0 my-1">
+					<div class="col">
+						<button type="button" class="btn btn-outline-primary btn-lg">
+							<b>Facebook 로그인</b>
+						</button>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
