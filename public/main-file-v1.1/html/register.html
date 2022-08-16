@@ -288,13 +288,13 @@
               
               <!-- ESTIMATE SHIPPING & TAX -->
               <div class="col-sm-12">
-                <h6>REGISTER</h6>
+                <h6>회원가입</h6>
                 <form>
                   <ul class="row">
                     
                     <!-- Name -->
                     <li class="col-md-6">
-                      <label> *NAME
+                      <label> *이름
                         <input type="text" name="first-name" value="" placeholder="">
                       </label>
                     </li>
@@ -305,25 +305,32 @@
                       </label>
                     </li>
                     <li class="col-md-1" style="padding-left: 0;">
-                        <button type="submit" class="btn" style="padding: 0px; margin-top: 27px; height: 44px; font-size: 10px; width: 100%;">DUPLICATE</button>
+                        <button type="submit" class="btn" style="padding: 0px; margin-top: 27px; height: 44px; font-size: 13px; width: 100%;">중복 확인</button>
                     </li>
                     
                     <!-- EMAIL ADDRESS111 -->
-                    <li class="col-md-2">
-                      <label> *EMAIL ADDRESS
+                    <li class="col-md-3" style="margin-right: 0px;">
+                      <label> *이메일
                         <input type="text" name="contry-state" value="" placeholder="">
                       </label>                
                     </li>
-                    <span style="display:inline-block; position:relative; font-size: 20px;">@</span>
+
                     
+
+
 
                     
                     
                     
                     <!-- EMAIL ADDRESS2222 -->
-                    <li class="col-md-4" style="margin-bottom: 0px;">
-                      <label style="margin-bottom: 0px;"> 
-                        <input type="text" name="contry-state" value="" placeholder="" style="margin-top: 27px;">
+                    <li class="col-md-3" style="margin-left:0px; margin-bottom: 0px; padding-top: 18px;">
+                      <label style="margin-bottom: 0px; margin-left:0px;"> 
+                        <select class="selectpicker" name="e-mail-add">
+                          <option value="--">@직접입력</option>
+                          <option value="gmail.com">@gmail.com</option>
+                          <option value="naver.com">@naver.com</option>
+                          <option value="hanmail.com">@hanmail.com</option>
+                        </select>
                       </label>
                     </li>
                     
@@ -333,47 +340,47 @@
                     
                     <!-- PHONE -->
                     <li class="col-md-6">
-                      <label> *PHONE
+                      <label> *전화번호
                         <input type="text" name="postal-code" value="" placeholder="">
                       </label>
                     </li>
                     
                     <!-- LAST NAME -->
                     <li class="col-md-6">
-                      <label> *PASSWORD
+                      <label> *비밀번호
                         <input type="password" name="last-name" value="" placeholder="">
                       </label>
                     </li>
                     
                     <!-- LAST NAME -->
                     <li class="col-md-6">
-                      <label> *RE_PASSWORD
+                      <label> *비밀번호 확인
                         <input type="password" name="last-name" value="" placeholder="">
                       </label>
                     </li>
                     <li class="col-md-6"> 
                       <!-- ADDRESS -->
-                      <label>*ZIP CODE
+                      <label>*ZIP 코드
                         <input type="text" name="address" value="" placeholder="">
                       </label>
                     </li>
                     <li class="col-md-6"> 
                       <!-- ADDRESS -->
-                      <label>*ADDRESS
+                      <label>*주소
                         <input type="text" name="address" value="" placeholder="">
                       </label>
                     </li>
                            
                     <!-- TOWN/CITY -->
                     <li class="col-md-6">
-                      <label>*ADDRESS DETAIL
+                      <label>*상세주소
                         <input type="text" name="town" value="" placeholder="">
                       </label>
                     </li>
                     
                     <!-- GENDER -->
                     <li class="col-md-6">
-                      <label> *GENDER
+                      <label> *성별
                         <select class="selectpicker" name="contry-state">
                           <option>MALE</option>
                           <option>FEMALE</option>
@@ -384,29 +391,16 @@
                                                 
                     <!-- DOB -->
                     <li class="col-md-6">
-                      <label> *DATE OF BIRTH
-                        <select class="selectpicker" name="contry-state">
-                          <option>1991-05-28</option>
-                          <option>--</option>
-                          <option>--</option>
-                        </select>
+                      <label> *생년월일
+                      	<input type="date">
                       </label>
                     </li>   
                                                   
-                    <!-- DOB -->
-                    <li class="col-md-6">
-                      <label> *DATE OF BIRTH
-                        <select class="selectpicker" name="contry-state">
-                          <option>1991-05-28</option>
-                          <option>--</option>
-                          <option>--</option>
-                        </select>
-                      </label>
-                    </li>
+
                     
                     <!-- PHONE -->
-                    <li class="col-md-6">
-                      <button type="submit" class="btn">REGISTER NOW</button>
+                    <li class="col-md-12 text-center">
+                      <button type="submit" class="btn">가입 완료</button>
                     </li>
                   </ul>
                 </form>

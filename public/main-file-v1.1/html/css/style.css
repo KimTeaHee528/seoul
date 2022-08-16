@@ -2841,24 +2841,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	-ms-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 }
-.email-select{
- 	border: 1px solid #2d3a4b;
-	height: 44px;
-	float: right;
-	width: 40%;
-	font-size: 11px;
-	padding: 0 10px;
-	letter-spacing: 1px;
-	display: inline-block;
-	font-weight: normal;
-	text-align: left;
-	margin-top: 10px;
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	-ms-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
- }
+
 .shopping-cart .bootstrap-select .btn {
 	margin-top: 10px;
 	background: #fff !important;
@@ -4426,3 +4409,21 @@ main {
 	display: inline-block;
 	font-size: 13px;
 }
+.email-select{
+ 	border: 1px solid #2d3a4b;
+	height: 44px;
+	float: right;
+	width: 100%;
+	font-size: 11px;
+	padding: 0 10px;
+	letter-spacing: 1px;
+	display: inline-block;
+	font-weight: normal;
+	text-align: left;
+	margin-top: 10px;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+ }
