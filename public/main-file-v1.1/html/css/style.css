@@ -1790,6 +1790,14 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	padding: 0px 10px;
 	font-size: 12px;
 }
+.shop-detail .productOption .btn {
+	border: 1px solid #2d3a4b;
+}
+.shop-detail .productOption .bootstrap-select .btn {
+	padding: 0px 10px;
+	font-size: 12px;
+	width: 250%
+}
 .shop-detail .bootstrap-select {
 	width: 100%;
 }
@@ -1809,6 +1817,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 }
 .shop-detail .some-info .btn:hover {
 	background: #ffe115;
+	color: #000000;
 }
 .shop-detail .some-info .like-us {
 	font-size: 16px;
@@ -2725,6 +2734,18 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	padding: 0px 10px;
 	font-size: 12px;
 }
+.shopping-cart .productOption {
+	position: relative;
+	padding: 0 15px;
+}
+.shopping-cart .productOption .btn {
+	border: 1px solid #2d3a4b !important;
+	color: #2d3a4b !important;
+}
+.shopping-cart .productOption .bootstrap-select .btn {
+	padding: 0px 10px;
+	font-size: 12px;
+}
 .shopping-cart .bootstrap-select.btn-group .dropdown-menu li {
 	min-height: inherit;
 }
@@ -2985,6 +3006,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 }
 .shopping-cart .btn:hover {
 	background: #ffe115 !important;
+	color: #000000;
 }
 .small-cart .cart-ship-info form {
 	background: #eeeeee;
