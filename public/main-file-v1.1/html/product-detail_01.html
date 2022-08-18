@@ -293,9 +293,9 @@
               <!-- Images Slider -->
               <div class="images-slider">
                 <ul class="slides">
-                  <li data-thumb="images/large-img-1.jpg"> <img class="img-responsive" src="images/large-img-1.jpg"  alt=""> </li>
-                  <li data-thumb="images/large-img-2.jpg"> <img class="img-responsive" src="images/large-img-2.jpg"  alt=""> </li>
-                  <li data-thumb="images/large-img-3.jpg"> <img class="img-responsive" src="images/large-img-3.jpg"  alt=""> </li>
+                  <li data-thumb="images/product-detail-01.png"> <img class="img-responsive" src="images/product-detail-01.png"  alt=""> </li>
+                  <li data-thumb="images/product-detail-02.png"> <img class="img-responsive" src="images/product-detail-02.png"  alt=""> </li>
+                  <li data-thumb="images/product-detail-03.png"> <img class="img-responsive" src="images/product-detail-03.png"  alt=""> </li>
                 </ul>
               </div>
             </div>
@@ -313,46 +313,59 @@
               </ul>
               
               <!-- Item Detail -->
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus ligula a scelerisque gravida. Nullam laoreet tortor ac maximus alique met, consectetur adipiscing elit. Vestibulum finibus ligula a scelerisque gravida. Nullam</p>
+              <p class="kor-sm">
+              	- 브랜드 정보(소개글) 넣을자리
+              </p>
+              <p class="kor-sm">
+              	- 브랜드 주소
+              </p>
+              <p class="kor-sm">
+              	- 브랜드 홈페이지
+              </p>
               
-              <!-- Short By -->
+              <!-- 상품 옵션들 -->
               <div class="some-info">
                 <ul class="row margin-top-30">
+                      <!-- 수량 -->
                   <li class="col-xs-2" style="margin-top: 5px; margin-right: 0px; margin-bottom: 0px;">수량
                   </li>
                   <li class="col-xs-6" style="padding-left: 0px; margin-bottom: 0px;">
                     <div class="quinty"> 
-                      <!-- QTY -->
-                      <select class="selectpicker">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                      </select>
+                      <input class="qty" type="number" min="1" step="1" value="1" id="qty" style="padding-left:10px; font-size:14px; font-weight:bold; width: 88px; height: 28px; border: 1px solid black">
                     </div>
                   </li>
                   <li class="col-xs-4">&nbsp;
                   </li>
-                  
-                  
-                  <li class="col-xs-2" style="margin-top: 5px; margin-right: 0px;">옵션1
+                      <!-- 옵션1 -->
+                  <li class="col-xs-2" style="margin-top: 5px; margin-right: 0px; margin-bottom: 0px;">옵션1
                   </li>
-                  <li class="col-xs-6" style="padding-left: 0px;">
+                  <li class="col-xs-6" style="padding-left: 0px; margin-bottom: 0px;">
                     <div class="productOption"> 
-                      <!-- QTY -->
                       <select class="selectpicker">
-                        <option>기본 옵션</option>
-                        <option>베터리팩 +1set (+12000)</option>
-                        <option>카메라 +1set (+50000)</option>
-                        <option>프로펠러 +1set (+34000)</option>
+                        <option>기본 옵션 (+0원)</option>
+                        <option>베터리팩 +1set (+12,000원)</option>
+                        <option>프로펠러 +1set (+34,000원)</option>
+                        <option>베터리팩&프로펠러 +1 (+46,000원)</option>
                       </select>
                     </div>
                   </li>
-                  <li class="col-xs-4">&nbsp;
+                  <li class="col-xs-4" style="margin-bottom: 20px;">&nbsp;
                   </li>
+                      <!-- 옵션2 -->
+                  <li class="col-xs-2" style="margin-top: 5px; margin-right: 0px; margin-bottom: 0px;">옵션2
+                  </li>
+                  <li class="col-xs-6" style="padding-left: 0px; margin-bottom: 0px;">
+                    <div class="productOption">
+                      <select class="selectpicker">
+                        <option>검정색 (+0원)</option>
+                        <option>흰색 (+0원)</option>
+                        <option>회색 (+0원)</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="col-xs-4" style="margin-bottom: 20px;">&nbsp;
+                  </li>
+                  
 
                </ul> 
                   <!-- ADD TO CART -->
@@ -371,10 +384,13 @@
                 
                 <!-- INFOMATION -->
                 <div class="inner-info">
-                  <h6>DELIVERY INFORMATION</h6>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus ligula a scelerisque gravida. Nullam laoreet tortor ac maximus alique met, consectetur adipiscing elit. </p>
-                  <h6>SHIPPING & RETURNS</h6>
-                  <h6>SHARE THIS PRODUCT</h6>
+                  <h6>배송정보</h6>
+                  <p>
+                  	- 15:00이전 주문시 당일 출고.
+                  	<br>- 금요일 15:00이후 ~ 일요일 24:00이전 주문시 월요일 출고
+                  	<br>- 택배사 사정에 따라 1~2주정도 소요될 수 있습니다.
+                  </p><br>
+                  <h6>공유</h6>
                   
                   <!-- Social Icons -->
                   <ul class="social_icons">
@@ -394,17 +410,19 @@
         <div class="item-decribe"> 
           <!-- Nav tabs -->
           <ul class="nav nav-tabs animate fadeInUp" data-wow-delay="0.4s" role="tablist">
-            <li role="presentation" class="active"><a href="#aadescr" role="tab" data-toggle="tab">DESCRIPTION</a></li>
-            <li role="presentation"><a href="#review" role="tab" data-toggle="tab">REVIEW (03)</a></li>
-            <li role="presentation"><a href="#tags" role="tab" data-toggle="tab">INFORMATION</a></li>
+            <li role="presentation" class="active"><a href="#aadescr" role="tab" data-toggle="tab">상품상세 정보</a></li>
+            <li role="presentation"><a href="#review" role="tab" data-toggle="tab">리뷰 (03)</a></li>
+            <li role="presentation"><a href="#tags" role="tab" data-toggle="tab">상품 문의</a></li>
           </ul>
           
           <!-- Tab panes -->
           <div class="tab-content animate fadeInUp" data-wow-delay="0.4s"> 
             <!-- DESCRIPTION -->
             <div role="tabpanel" class="tab-pane fade in active" id="aadescr">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed lectus id nisi interdum mollis. Nam congue tellus quis elit mattis congue. Aenean eu massa sed mauris hendrerit ornare sed eget ante. 
-                Vestibulum id eros quam. Nunc volutpat at magna gravida eleifend. Phasellus sit amet nisi tempus, tincidunt elit ac, tempor metus. <br>
+              <p>
+              	입문용자를 위한 드론. 촬영용 드론. 
+              	<br>
+
               </p>
               <h6>THE SIMPLE FACTS</h6>
               <ul>
