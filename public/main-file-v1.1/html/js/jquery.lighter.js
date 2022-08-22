@@ -295,7 +295,25 @@ Copyright 2015 Kevin Sylvestre
     return Lighter;
 
   })();
-
+  
+  
+  
+$(function(){
+$("#email-box").hide();
+$("#email-sel").change(function() {
+                //직접입력을 누를 때 나타남
+		if($("#email-sel").val() == "type") {
+			$("#email-box").show();
+		}  else {
+			$("#email-box").hide();
+		}
+	}) 
+});
+  
+  
+  
+  
+  
   $.fn.extend({
     lighter: function(option) {
       if (option == null) {
