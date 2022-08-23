@@ -3024,13 +3024,23 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 .small-cart .cart-ship-info form input {
 	width: 70%;
 	float: left;
-	border-right: 0px;
 	margin: 0px;
 }
 .small-cart .cart-ship-info form button.btn {
-	width: 30%;
+	width: 25%;
 	height: 44px;
 	float: left;
+	margin-left: 10px;
+	background-color: #eeeeee;
+	color: black;
+}
+.small-cart .cart-ship-info form button a {
+	width: 25%;
+	height: 44px;
+	float: left;
+	margin-left: 10px;
+	background-color: #eeeeee;
+	color: black;
 }
 .small-cart .coupn-btn {
 	margin-top: 30px;

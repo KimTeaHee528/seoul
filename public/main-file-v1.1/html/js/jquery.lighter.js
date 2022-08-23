@@ -5,7 +5,6 @@ jQuery Lighter
 Copyright 2015 Kevin Sylvestre
 1.3.4
  */
-
 (function() {
   "use strict";
   var $, Animation, Lighter, Slide,
@@ -309,11 +308,33 @@ $("#email-sel").change(function() {
 		}
 	}) 
 });
-  
-  
-  
-  
-  
+//=======쿠폰 항목 추가 삭제============
+$(function(){
+var noc = 1;
+  $("#cupon_add").click(function(){
+     var html = '<div>'
+     +'<input type="text" id="cupon_num_6" value="" placeholder="쿠폰입력">'
+     +'<button type="submit" id="cupon_del_6" class="btn btn-small btn-dark">삭제 -</button>'
+     +'</div>'; //tr, td를 열고 + 문자열로 바꾸고 +td 닫기
+     $("#cupon_reg").append(html);
+     noc +=1;
+  });
+  $("#cupon_reg").on("click", ".btn", function() {
+	if(noc>1){
+	    $(this).parent().remove();
+	     noc -=1;
+	}else {
+		$(this).parent().remove();
+	     var html = '<div>'
+	     +'<input type="text" id="cupon_num_6" value="" placeholder="쿠폰입력">'
+	     +'<button type="submit" id="cupon_del_6" class="btn btn-small btn-dark">삭제 -</button>'
+	     +'</div>'; //tr, td를 열고 + 문자열로 바꾸고 +td 닫기
+	     $("#cupon_reg").append(html);
+	}
+  });  
+})
+
+
   $.fn.extend({
     lighter: function(option) {
       if (option == null) {
