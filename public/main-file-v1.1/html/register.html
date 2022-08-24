@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="M_Adnan">
-<title>회원가입 화면</title>
+<title>회원가입</title>
 
 <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
 <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
@@ -142,7 +142,7 @@
                     <h6>김태희 회원님 환영합니다.</h6>
                   </li>
                   <li><a href="#">장바구니</a></li>
-                  <li><a href="#">회원정보</a></li>
+                  href="member_info">회원정보</a></li>
                   <li><a href="#">로그아웃</a></li>
                 </ul>
               </li>
@@ -245,18 +245,12 @@
                     <li class="col-md-1" style="padding-left: 0;">
                         <button type="submit" class="btn" style="padding: 0px; margin-top: 27px; height: 44px; font-size: 13px; width: 100%;">중복 확인</button>
                     </li>
-                    
                     <!-- EMAIL ADDRESS111 -->
                     <li class="col-md-3" style="margin-right: 0px;">
                       <label> *이메일
                         <input type="text" name="contry-state" value="" placeholder="">
                       </label>                
                     </li>
-
-                    
-
-
-
                     <li class="col-md-3" id="email-box" name="selboxDirect" style="margin-right: 0px;">
                       <label> &nbsp;
                         <input type="text" name="contry-state" value="" placeholder="@example.com">
@@ -274,25 +268,24 @@
                         </select>
                       </label>                
                     </li>
-        
-                    <!-- PHONE -->
+                    <li class="col-md-3" id="email-box2" name="selboxDirect" style="margin-right: 0px; height: 92px;">
+                      <label> &nbsp;</label>                
+                    </li>
+                    <!-- LAST NAME -->
+                    <li class="col-md-6" style="margin-top: 0px;">
+                      <label><span class="pwl" id="pwid">*비밀번호</span> 
+                        <input type="password" class="pw" id="pw" name="" value="" placeholder="">
+                      </label>
+                    </li>
+                    <li class="col-md-6" style="margin-top: 0px;">
+                      <label><span class="pwl" id="pwchid">*비밀번호 확인</span> 
+                        <input type="password" class="pw" id="pw_re" name="" value="" placeholder="">
+                      </label>
+                    </li>
+                                        <!-- PHONE -->
                     <li class="col-md-6" style="margin-top: 0px;">
                       <label> *전화번호
                         <input type="text" name="postal-code" value="" placeholder="">
-                      </label>
-                    </li>
-                    
-                    <!-- LAST NAME -->
-                    <li class="col-md-6">
-                      <label> *비밀번호
-                        <input type="password" name="last-name" value="" placeholder="">
-                      </label>
-                    </li>
-                    
-                    <!-- LAST NAME -->
-                    <li class="col-md-6">
-                      <label> *비밀번호 확인
-                        <input type="password" name="last-name" value="" placeholder="">
                       </label>
                     </li>
                     <li class="col-md-6"> 
