@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="M_Adnan">
-<title>ECOSHOP - Multipurpose eCommerce HTML5 Template</title>
+<title>회원가입 화면</title>
 
 <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
 <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
@@ -21,19 +21,12 @@
 <link href="css/style.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
 
-<!-- JavaScripts --> 
+<!-- JavaScripts -->
 <script src="js/modernizr.js"></script>
 
 <!-- Online Fonts -->
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
-
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
 
 </head>
 <body>
@@ -54,7 +47,7 @@
       <div class="container"> 
         
         <!-- Logo -->
-        <div class="logo"> <a href="index.html"><img class="img-responsive" src="images/logo.png" alt="" ></a> </div>
+        <div class="logo"> <a href="home.html"><img class="img-responsive" src="images/logo.png" alt="" ></a> </div>
         <nav class="navbar ownmenu">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-open-btn" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"><i class="fa fa-navicon"></i></span> </button>
@@ -81,7 +74,7 @@
                         <li> <a href="shop.html">여자아이 </a> </li>
                         <li> <a href="shop.html">청소년 </a> </li>
                         <li> <a href="shop.html">가족 </a> </li>
-                        <li> <a href="shop.html">키덜트</a> </li>
+                        <li> <a href="shop.html">어덜트</a> </li>
                       </ul>
                     </div>
                     
@@ -148,6 +141,7 @@
                   <li>
                     <h6>김태희 회원님 환영합니다.</h6>
                   </li>
+                  <li><a href="#">장바구니</a></li>
                   <li><a href="#">회원정보</a></li>
                   <li><a href="#">로그아웃</a></li>
                 </ul>
@@ -177,7 +171,7 @@
                   </li>
                   <li class="margin-0">
                     <div class="row">
-                      <div class="col-xs-6"> <a href="cart.html" class="btn">장바구니 확인</a></div>
+                      <div class="col-xs-6"> <a href="shopping-cart.html" class="btn">장바구니 확인</a></div>
                       <div class="col-xs-6 "> <a href="checkout.html" class="btn">결제하기</a></div>
                     </div>
                   </li>
@@ -204,7 +198,6 @@
       </div>
     </div>
   </header>
-  
   <!--======= SUB BANNER =========-->
   <section class="sub-bnr" data-stellar-background-ratio="0.5">
     <div class="position-center-center">
@@ -221,181 +214,123 @@
   <div id="content"> 
     
     <!--======= PAGES INNER =========-->
-    <section class="padding-top-100 padding-bottom-100 pages-in chart-page">
+    <section class="chart-page padding-top-100 padding-bottom-100">
       <div class="container"> 
         
         <!-- Payments Steps -->
-        <div class="shopping-cart text-center">
-          <div class="cart-head">
-            <ul class="row">
-              <!-- PRODUCTS -->
-              <li class="col-sm-2 text-left">
-                <h6>PRODUCTS</h6>
-              </li>
-              <!-- NAME -->
-              <li class="col-sm-4 text-left">
-                <h6>NAME</h6>
-              </li>
-              <!-- PRICE -->
-              <li class="col-sm-2">
-                <h6>PRICE</h6>
-              </li>
-              <!-- QTY -->
-              <li class="col-sm-1">
-                <h6>QTY</h6>
-              </li>
-              
-              <!-- TOTAL PRICE -->
-              <li class="col-sm-2">
-                <h6>TOTAL</h6>
-              </li>
-              <li class="col-sm-1"> </li>
-            </ul>
-          </div>
+        <div class="shopping-cart"> 
           
-          <!-- Cart Details -->
-          <ul class="row cart-details">
-            <li class="col-sm-6">
-              <div class="media"> 
-                <!-- Media Image -->
-                <div class="media-left media-middle"> <a href="#." class="item-img"> <img class="media-object" src="images/cart-1.png" alt=""> </a> </div>
-                
-                <!-- Item Name -->
-                <div class="media-body">
-                  <div class="position-center-center">
-                    <h5>rocket</h5>
-                    <br>
-                    <p>옵션1:베터리팩 +1set, 옵션2:검정색</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            
-            <!-- PRICE -->
-            <li class="col-sm-2">
-              <div class="position-center-center"> <span class="price">30000 <small>원</small></span> </div>
-            </li>
-            
-            <!-- QTY -->
-            <li class="col-sm-1">
-              <div class="position-center-center">
-                <div class="quinty"> 
-                  <!-- QTY -->
-                  <select class="selectpicker">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-                </div>
-              </div>
-            </li>
-            
-            <!-- TOTAL PRICE -->
-            <li class="col-sm-2">
-              <div class="position-center-center"> <span class="price">30000 <small>원</small></span> </div>
-            </li>
-            
-            <!-- REMOVE -->
-            <li class="col-sm-1">
-              <div class="position-center-center"> <a href="#."><i class="icon-close"></i></a> </div>
-            </li>
-          </ul>
+          <!-- SHOPPING INFORMATION -->
+          <div class="cart-ship-info register">
+            <div class="row"> 
+              
+              <!-- ESTIMATE SHIPPING & TAX -->
+              <div class="col-sm-12">
+                <h6 style="padding-left: 50px;">회원정보 수정</h6>
+                <form>
+                  <ul class="row">
+                    <!-- Name -->
+                    <div class="col-md-9" style="padding-left: 100px;">
+	                    <div class="col-md-4">
+	                      <label> *ID
+	                        <input type="text" name="first-name" value="spm528" placeholder="">
+	                      </label>
+	                    </div>
+	                    <!-- LAST NAME -->
+	                    <div class="col-md-4">
+	                      <label> *이름
+	                        <input type="text" name="last-name" value="김태희" placeholder="">
+	                      </label>
+	                    </div>
+	                    <!-- GENDER -->
+	                    <div class="col-md-4">
+	                      <label> *성별
+	                        <select class="selectpicker" name="contry-state">
+	                          <option>MALE</option>
+	                          <option>FEMALE</option>
+	                          <option>OTHER</option>
+	                        </select>
+	                      </label>
+	                    </div>   
+	                    
+                    <div class="col-md-6" style="margin-top: 0px;">
+                      <label><span class="pwl" id="pwid">*비밀번호</span> 
+                        <input type="password" class="pw" id="pw" name="" value="" placeholder="">
+                      </label>
+                    </div>
+                    <div class="col-md-6" style="margin-top: 0px;">
+                      <label><span class="pwl" id="pwchid">*비밀번호 확인</span> 
+                        <input type="password" class="pw" id="pw_re" name="" value="" placeholder="">
+                      </label>
+                    </div>
+	                <div class="col-md-4" style="margin-right: 0px;">
+                      <label> *이메일
+                        <input type="text" name="contry-state" value="spm528" placeholder="">
+                      </label>
+                    </div>
+                    <div class="col-md-4" id="email-box" name="selboxDirect" style="margin-right: 0px;">
+                      <label> &nbsp;
+                        <input type="text" name="contry-state" value="" placeholder="@example.com">
+                      </label>                
+                    </div>
+                  <div class="col-md-4" style="margin-right: 0px;">
+                      <label> &nbsp;
+                        <select class="selectpicker" id="email-sel" name="e-mail-add">
+                          <option value="gmail.com">@gmail.com</option>
+                          <option value="naver.com">@naver.com</option>
+                          <option value="hanmail.com">@hanmail.com</option>
+                          <option value="type">@직접입력</option>
+                        </select>
+                      </label>                
+                    </div>
+	                 <!-- PHONE -->
+                    <div class="col-md-6" style="margin-top: 0px;">
+                      <label> *전화번호
+                        <input type="text" name="postal-code" value="010-3015-7203" placeholder="">
+                      </label>
+                    </div>
+                   <!-- DOB -->
+                    <div class="col-md-6">
+                      <label> *생년월일
+                      	<input type="date" value="1991-05-28">
+                      </label>
+                    </div>   
 
-          <!-- Cart Details -->
-          <ul class="row cart-details">
-            <li class="col-sm-6">
-              <div class="media"> 
-                <!-- Media Image -->
-                <div class="media-left media-middle"> <a href="#." class="item-img"> <img class="media-object" src="images/cart-3.png" alt=""> </a> </div>
-                
-                <!-- Item Name -->
-                <div class="media-body">
-                  <div class="position-center-center">
-                    <h5>BIG BEAR</h5>
-                    <br>
-                    <p>옵션 없음</p>
+                    <div class="col-md-12"> 
+                      <!-- ADDRESS -->
+                      <label>*ZIP 코드
+                        <input type="text" name="address" value="08746" placeholder="">
+                      </label>
+                    </div>
+                    <div class="col-md-12"> 
+                      <!-- ADDRESS -->
+                      <label>*주소
+                        <input type="text" name="address" value="서울특별시 관악구 양녕로6나길 18" placeholder="">
+                      </label>
+                    </div>
+                           
+                    <!-- TOWN/CITY -->
+                    <div class="col-md-12">
+                      <label>*상세주소
+                        <input type="text" name="town" value="신봉아파트 102동 407호" placeholder="">
+                      </label>
+                    </div>
+                    <li class="col-md-12 text-center">
+                      <button type="submit" class="btn" style="margin-bottom: 10px;">저장</button>
+                    </li>
                   </div>
-                </div>
-              </div>
-            </li>
-            
-            <!-- PRICE -->
-            <li class="col-sm-2">
-              <div class="position-center-center"> <span class="price">15000 <small>원</small></span> </div>
-            </li>
-            
-            <!-- QTY -->
-            <li class="col-sm-1">
-              <div class="position-center-center">
-                <div class="quinty"> 
-                  <!-- QTY -->
-                  <select class="selectpicker">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-                </div>
-              </div>
-            </li>
-            
-            <!-- TOTAL PRICE -->
-            <li class="col-sm-2">
-              <div class="position-center-center"> <span class="price">15000 <small>원</small></span> </div>
-            </li>
-            
-            <!-- REMOVE -->
-            <li class="col-sm-1">
-              <div class="position-center-center"> <a href="#."><i class="icon-close"></i></a> </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    
-    <!--======= PAGES INNER =========-->
-    <section class="padding-top-100 padding-bottom-100 light-gray-bg shopping-cart small-cart">
-      <div class="container"> 
-        
-        <!-- SHOPPING INFORMATION -->
-        <div class="cart-ship-info margin-top-0">
-          <div class="row"> 
-            
-            <!-- DISCOUNT CODE -->
-            <div class="col-sm-7">
-              <h6>쿠폰 코드</h6>
-                <button id="cupon_add" class="btn btn-small btn-dark">추가</button>
-                <button id="cupon_com" class="btn btn-small btn-dark">쿠폰적용</button>
-              <form id="cupon_reg">
-                <div>
-	                <input type="text" id="cupon_num" value="" placeholder="쿠폰입력">
-	                <button id="cupon_del" class="btn btn-small btn-dark">삭제 -</button>
-                </div>
-              </form>
-              <div class="coupn-btn"> 
-              	<a href="shop.html" class="btn">계속 쇼핑하기</a> 
-              	<a href="checkout.html" class="btn">결제하기</a> </div>
-            </div>
-            
-            <!-- SUB TOTAL -->
-            <div class="col-sm-5">
-              <h6>총 결제 금액</h6>
-              <div class="grand-total">
-                <div class="order-detail">
-                  <p>rocket <span>30,000 (+0) 원 </span></p>
-                  <p>BIG BEAR <span>15,000 원 </span></p>
-                  <p>할인 <span>5,000 원 </span></p>
-                  
-                  <!-- SUB TOTAL -->
-                  <p class="all-total">결제금액 <span>45,000 원 </span></p>
-                </div>
+                  <div class="col-md-3" style="text-align: center;">
+						<img alt="" src="images/man.png" style="border: 4px solid yellow;"><br>
+						<button type="submit" class="btn" style="margin-top: 10px;">사진변경</button>
+                  </div>
+                  </ul>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    
     
     <!-- About -->
     <section class="small-about padding-top-150 padding-bottom-150">
@@ -508,7 +443,5 @@
 <script type="text/javascript" src="rs-plugin/js/jquery.tp.min.js"></script> 
 <script src="js/main.js"></script> 
 <script src="js/main.js"></script>
-
-
 </body>
 </html>

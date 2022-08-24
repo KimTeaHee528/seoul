@@ -296,11 +296,11 @@ Copyright 2015 Kevin Sylvestre
   })();
   
   
-  
+//=========이메일 추가===========
 $(function(){
 $("#email-box").hide();
 $("#email-sel").change(function() {
-                //직접입력을 누를 때 나타남
+//직접입력을 누를 때 나타남
 		if($("#email-sel").val() == "type") {
 			$("#email-box").show();
 		}  else {
@@ -333,7 +333,27 @@ var noc = 1;
 	}
   });  
 })
-
+//==========비밀번호 일치 확인===========
+ $('.pw').keyup(function () {
+    var pwd1 = $("#pw").val();
+    var pwd2 = $("#pw_re").val();
+    if ( pwd1 != '' && pwd2 == '' ) {
+			$(".pwl").css("color","black");
+			$(".pw").css("border-color","black");
+			$('#pwchid').text("*비밀번호");
+			$('#pwchid').text("*비밀번호 확인");
+    } else if (pwd1 != "" || pwd2 != "") {
+        if (pwd1 == pwd2) {
+			$(".pw").css("border-color","black");
+			$(".pwl").css("color","black");
+			$('#pwchid').text("*비밀번호 일치");
+        } else {
+			$(".pw").css("border-color","red");
+			$(".pwl").css("color","red");
+			$('#pwchid').text("*비밀번호 불일치");
+        }
+    }
+ });
 
   $.fn.extend({
     lighter: function(option) {

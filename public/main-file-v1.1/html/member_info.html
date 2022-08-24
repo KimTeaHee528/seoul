@@ -57,7 +57,7 @@
           <div class="collapse navbar-collapse" id="nav-open-btn">
             <ul class="nav">
               <li> <a href="home.html" style="margin-right: 20px;">Home</a> </li>
-              <li> <a href="about-us_01.html" style="margin-right: 20px;">About</a> </li>
+              <li> <a href="about-us_02.html" style="margin-right: 20px;">About</a> </li>
               
               <!-- MEGA MENU -->
               <li class="dropdown megamenu" style="margin-right: 20px;"> <a href="#." class="dropdown-toggle" data-toggle="dropdown">store</a>
@@ -229,24 +229,23 @@
                 <h6 style="padding-left: 50px;">회원정보</h6>
                 <form>
                   <ul class="row">
-                    
                     <!-- Name -->
                     <div class="col-md-9" style="padding-left: 100px;">
 	                    <div class="col-md-4">
 	                      <label> *ID
-	                        <input type="text" name="first-name" value="" placeholder="">
+	                        <input type="text" name="first-name" value="spm528" placeholder="" readonly>
 	                      </label>
 	                    </div>
 	                    <!-- LAST NAME -->
 	                    <div class="col-md-4">
 	                      <label> *이름
-	                        <input type="text" name="last-name" value="" placeholder="">
+	                        <input type="text" name="last-name" value="김태희" placeholder="" readonly>
 	                      </label>
 	                    </div>
 	                    <!-- GENDER -->
 	                    <div class="col-md-4">
 	                      <label> *성별
-	                        <select class="selectpicker" name="contry-state">
+	                        <select class="selectpicker" name="contry-state" disabled>
 	                          <option>MALE</option>
 	                          <option>FEMALE</option>
 	                          <option>OTHER</option>
@@ -255,17 +254,17 @@
 	                    </div>   
 	                <div class="col-md-4" style="margin-right: 0px;">
                       <label> *이메일
-                        <input type="text" name="contry-state" value="" placeholder="">
+                        <input type="text" name="contry-state" value="spm528" placeholder="" readonly>
                       </label>                
                     </div>
                     <div class="col-md-4" id="email-box" name="selboxDirect" style="margin-right: 0px;">
                       <label> &nbsp;
-                        <input type="text" name="contry-state" value="" placeholder="@example.com">
+                        <input type="text" name="contry-state" value="" placeholder="@example.com" readonly>
                       </label>                
                     </div>
                   <div class="col-md-4" style="margin-right: 0px;">
                       <label> &nbsp;
-                        <select class="selectpicker" id="email-sel" name="e-mail-add">
+                        <select disabled class="selectpicker" id="email-sel" name="e-mail-add">
                           <option value="gmail.com">@gmail.com</option>
                           <option value="naver.com">@naver.com</option>
                           <option value="hanmail.com">@hanmail.com</option>
@@ -273,79 +272,46 @@
                         </select>
                       </label>                
                     </div>
-                    </div>
-                    
-                    <div class="col-md-3">
-						<img alt="" src="images/man.png" style="border: 1px solid black;">
-                    </div>   
-                    
-                    
-                    
-                    
-                    
-                    <!-- EMAIL ADDRESS111 -->
-                    <li class="col-md-3" style="margin-right: 0px;">
-                      <label> *이메일
-                        <input type="text" name="contry-state" value="" placeholder="">
-                      </label>                
-                    </li>
-                    <li class="col-md-3" id="email-box" name="selboxDirect" style="margin-right: 0px;">
-                      <label> &nbsp;
-                        <input type="text" name="contry-state" value="" placeholder="@example.com">
-                      </label>                
-                    </li>
-                  <li class="col-md-3" style="margin-right: 0px;">
-                      <label> &nbsp;
-                        <select class="selectpicker" id="email-sel" name="e-mail-add">
-                          <option value="gmail.com">@gmail.com</option>
-                          <option value="naver.com">@naver.com</option>
-                          <option value="hanmail.com">@hanmail.com</option>
-                          <option value="type">@직접입력</option>
-                        </select>
-                      </label>                
-                    </li>
-                    <!-- PHONE -->
-                    <li class="col-md-6" style="margin-top: 0px;">
+	                 <!-- PHONE -->
+                    <div class="col-md-6" style="margin-top: 0px;">
                       <label> *전화번호
-                        <input type="text" name="postal-code" value="" placeholder="">
+                        <input type="text" name="postal-code" value="010-3015-7203" placeholder="" readonly>
                       </label>
-                    </li>
-                    
+                    </div>
+                   <!-- DOB -->
+                    <div class="col-md-6">
+                      <label> *생년월일
+                      	<input type="date" value="1991-05-28"  readonly>
+                      </label>
+                    </div>   
 
-                    <li class="col-md-6"> 
+                    <div class="col-md-12"> 
                       <!-- ADDRESS -->
                       <label>*ZIP 코드
-                        <input type="text" name="address" value="" placeholder="">
+                        <input type="text" name="address" value="08746" placeholder="" readonly>
                       </label>
-                    </li>
-                    <li class="col-md-6"> 
+                    </div>
+                    <div class="col-md-12"> 
                       <!-- ADDRESS -->
                       <label>*주소
-                        <input type="text" name="address" value="" placeholder="">
+                        <input type="text" name="address" value="서울특별시 관악구 양녕로6나길 18" placeholder="" readonly>
                       </label>
-                    </li>
+                    </div>
                            
                     <!-- TOWN/CITY -->
-                    <li class="col-md-6">
+                    <div class="col-md-12">
                       <label>*상세주소
-                        <input type="text" name="town" value="" placeholder="">
+                        <input type="text" name="town" value="신봉아파트 102동 407호" placeholder="" readonly>
                       </label>
-                    </li>
- 
-                                                
-                    <!-- DOB -->
-                    <li class="col-md-6">
-                      <label> *생년월일
-                      	<input type="date">
-                      </label>
-                    </li>   
-                                                  
-
-                    
-                    <!-- PHONE -->
+                    </div>
                     <li class="col-md-12 text-center">
-                      <button type="submit" class="btn">가입 완료</button>
+                      <button type="submit" class="btn" style="margin-bottom: 10px;">회원정보 수정</button>
                     </li>
+                  </div>
+                  <div class="col-md-3" style="text-align: center;">
+						<img alt="" src="images/man.png" style="border: 4px solid yellow;"><br>
+						<button type="submit" class="btn" style="margin-top: 10px;">사진변경</button>
+                  </div>
                   </ul>
                 </form>
               </div>
