@@ -4466,3 +4466,28 @@ main {
 	-ms-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
  }
+ #ccg .list-1{
+
+ }
+ 
+ .adm-list-head{
+  	font-size: 12px;
+ }
+ .item-decribe input[type="checkbox"]{
+ 	accent-color: rgb(255, 255, 255);
+ }
+.adm-list-head1 {
+	display: inline-block;
+	width: 100%;
+	padding: 0px 0;
+	border-bottom: 1px solid #d1d5db;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+.adm-list-head1 h6 {
+	margin: 0px;
+	font-weight: normal;
+	font-size: 12px;
+}
+ 
+ 
