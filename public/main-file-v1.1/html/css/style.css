@@ -4466,28 +4466,130 @@ main {
 	-ms-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
  }
- #ccg .list-1{
-
+#ccg .adm-list-head .list-1{
+ 	width: 30px;;
+ 	display: inline-block;
+ 	height: 20px;
+ 	margin-top: 10;
+ 	top: 10px;
+ 	vertical-align: bottom;
+ }
+ #ccg .adm-list-head .list-2{
+ 	width: 55px;;
+ 	display: inline-block;
+ 	height: 20px;
+ 	margin-top: 10;
+ }
+#ccg .adm-list-head .list-3{
+ 	width: 100px;;
+ 	display: inline-block;
+ 	height: 20px;
+ 	margin-top: 10;
+ }
+ #ccg .adm-list-head .list-4{
+ 	width: 25%;
+ 	display: inline-block;
+ 	height: 20px;
+ 	margin-top: 10;
+ }
+ #ccg .adm-list-head .list-5{
+ 	width: 25%;
+ 	display: inline-block;
+ 	height: 20px;
+ 	margin-top: 10;
+ }
+ #ccg .adm-list-head .list-6{
+ 	width: 100px;
+ 	display: inline-block;
+ 	height: 20px;
+ 	margin-top: 10;
+ }
+ #ccg .adm-list-head .list-7{
+ 	width: 150px;
+ 	display: inline-block;
+ 	height: 20px;
+ 	margin-top: 10;
+ }
+#ccg .adm-list-head .list-8{
+ 	width: 150px;
+ 	display: inline-block;
+ 	height: 20px;
+ 	margin-top: 10;
  }
  
  .adm-list-head{
   	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin-bottom: 3px;
+	margin-left: 100px;
+	font-weight: bolder;
  }
+ 
  .item-decribe input[type="checkbox"]{
  	accent-color: rgb(255, 255, 255);
  }
-.adm-list-head1 {
-	display: inline-block;
-	width: 100%;
-	padding: 0px 0;
-	border-bottom: 1px solid #d1d5db;
-	padding-bottom: 20px;
-	margin-bottom: 30px;
-}
-.adm-list-head1 h6 {
-	margin: 0px;
-	font-weight: normal;
-	font-size: 12px;
-}
+
+
+
+
+
+
+
+#ccg .adm-list-body .list-1{
+ 	width: 30px;;
+ 	display: inline-block;
+ 	height: 20px;
+ 	margin-top: 10;
+ 	top: 10px;
+ 	vertical-align: bottom;
+ }
+ #ccg .adm-list-body .list-2{
+ 	width: 55px;;
+ 	display: inline-block;
+ 	height: 20px;
+ 	margin-top: 10;
+ }
+#ccg .adm-list-body .list-3{
+ 	width: 100px;;
+ 	display: inline-block;
+ 	height: 20px;
+ 	margin-top: 10;
+ }
+ #ccg .adm-list-body .list-4{
+ 	width: 25%;
+ 	display: inline-block;
+ 	height: 20px;
+ 	margin-top: 10;
+ }
+ #ccg .adm-list-body .list-5{
+ 	width: 25%;
+ 	display: inline-block;
+ 	height: 20px;
+ 	margin-top: 10;
+ }
+ #ccg .adm-list-body .list-6{
+ 	width: 100px;
+ 	display: inline-block;
+ 	height: 20px;
+ 	margin-top: 10;
+ }
+ #ccg .adm-list-body .list-7{
+ 	width: 150px;
+ 	display: inline-block;
+ 	height: 20px;
+ 	margin-top: 10;
+ }
+#ccg .adm-list-body .list-8{
+ 	width: 150px;
+ 	display: inline-block;
+ 	height: 20px;
+ 	margin-top: 10;
+ }
  
- 
+ .adm-list-body{
+  	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin-bottom: 3px;
+	margin-left: 100px;
+	height: 25px;
+ }
