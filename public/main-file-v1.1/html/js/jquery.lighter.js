@@ -377,6 +377,35 @@ var noc = 1;
         }
     }
  });
+ 
+// ==================가입완료 누를때==================
+ $("#submit_btn").click(function () {
+	
+    var v1 = $("#user_name").val();
+    var v2 = $("#user_id").val();
+    var v3 = $("#email_id").val();
+    var v4 = $("#email-sel").val();
+    var v5 = $("#pw").val();
+    var v6 = $("#pw_re").val();
+    var v7 = $("#tell").val();
+    var v8 = $("#gender").val();
+    var v9 = $("#zip").val();
+    var v10 = $("#add").val();
+    var v11 = $("#add_detail").val();
+    var v12 = $("#dob").val();
+//    if ( v1 == '' || v2 == '' || v3 == '' || v4 == '' || v5 == '' || v6 == '' || v7 == '' || v8 == '' || v9 == '' || v10 == '' || v11 == '' || v12 == '' || v5 == v6) {
+    if ( v1 == '' || v2 == '' || v3 == '' || v4 == '' || v5 == '' || v6 == '' || v7 == '' || v8 == '' || v9 == '' || v10 == '' || v11 == '' || v12 == '' || v5 != v6) {
+			alert('잘보세요 \n v1 : ' + v1 + '\n v2 : ' + v2 + '\n v3 : ' + v3 + '\n v4 : ' + v4 + '\n v5 : ' + v5 + '\n v6 : ' + v6 + '\n v7 : ' + v7 + '\n v8 : ' + v8 + '\n v9 : ' + v9 + '\n v10 : ' + v10 + '\n v11 : ' + v11 + '\n v12 : ' + v12);                             
+			}
+    else {
+			alert('잘했어요');
+        }
+    }
+    
+ );
+
+
+
 
   $.fn.extend({
     lighter: function(option) {

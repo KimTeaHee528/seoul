@@ -232,13 +232,13 @@
                     <!-- Name -->
                     <li class="col-md-6">
                       <label> *이름
-                        <input type="text" name="first-name" value="" placeholder="">
+                        <input type="text" name="first-name" id="user_name" value="" placeholder="">
                       </label>
                     </li>
                     <!-- LAST NAME -->
                     <li class="col-md-5">
                       <label> *ID
-                        <input type="text" name="last-name" value="" placeholder="">
+                        <input type="text" name="last-name" id="user_id" value="" placeholder="">
                       </label>
                     </li>
                     <li class="col-md-1" style="padding-left: 0;">
@@ -247,12 +247,12 @@
                     <!-- EMAIL ADDRESS111 -->
                     <li class="col-md-3" style="margin-right: 0px;">
                       <label> *이메일
-                        <input type="text" name="contry-state" value="" placeholder="">
+                        <input type="text" name="contry-state" id="email_id" value="" placeholder="">
                       </label>                
                     </li>
                     <li class="col-md-3" id="email-box" name="selboxDirect" style="margin-right: 0px;">
                       <label> &nbsp;
-                        <input type="text" name="contry-state" value="" placeholder="@example.com">
+                        <input type="text" name="contry-state" id="email_div" value="" placeholder="@example.com">
                       </label>                
                     </li>
                     
@@ -260,9 +260,9 @@
                   <li class="col-md-3" style="margin-right: 0px;">
                       <label> &nbsp;
                         <select class="selectpicker" id="email-sel" name="e-mail-add">
-                          <option value="gmail.com">@gmail.com</option>
-                          <option value="naver.com">@naver.com</option>
-                          <option value="hanmail.com">@hanmail.com</option>
+                          <option value="@gmail.com">@gmail.com</option>
+                          <option value="@naver.com">@naver.com</option>
+                          <option value="@hanmail.com">@hanmail.com</option>
                           <option value="type">@직접입력</option>
                         </select>
                       </label>                
@@ -284,13 +284,13 @@
                                         <!-- PHONE -->
                     <li class="col-md-6" style="margin-top: 0px;">
                       <label> *전화번호
-                        <input type="text" name="postal-code" value="" placeholder="">
+                        <input type="text" name="postal-code" id="tell" value="" placeholder="">
                       </label>
                     </li>
                     <!-- GENDER -->
                     <li class="col-md-6">
                       <label> *성별
-                        <select class="selectpicker" name="contry-state">
+                        <select class="selectpicker" id="gender" name="contry-state">
                           <option>MALE</option>
                           <option>FEMALE</option>
                           <option>OTHER</option>
@@ -300,20 +300,20 @@
                       <!-- ADDRESS -->
                     <li class="col-md-6"> 
                       <label>*ZIP 코드
-                        <input type="text" name="address" value="" placeholder="">
+                        <input type="text" name="address" id="zip" value="" placeholder="">
                       </label>
                     </li>
                     <li class="col-md-6"> 
                       <!-- ADDRESS -->
                       <label>*주소
-                        <input type="text" name="address" value="" placeholder="">
+                        <input type="text" name="address" id="add" value="" placeholder="">
                       </label>
                     </li>
                            
                     <!-- TOWN/CITY -->
                     <li class="col-md-6">
                       <label>*상세주소
-                        <input type="text" name="town" value="" placeholder="">
+                        <input type="text" name="town" id="add_detail" value="" placeholder="">
                       </label>
                     </li>
                     
@@ -322,7 +322,7 @@
                     <!-- DOB -->
                     <li class="col-md-6">
                       <label> *생년월일
-                      	<input type="date">
+                      	<input type="date" id="dob">
                       </label>
                     </li>   
                                                   
@@ -330,7 +330,7 @@
                     
                     <!-- PHONE -->
                     <li class="col-md-12 text-center">
-                      <button type="submit" class="btn">가입 완료</button>
+                      <button type="button" class="btn" id="submit_btn">가입 완료</button>
                     </li>
                   </ul>
                 </form>
